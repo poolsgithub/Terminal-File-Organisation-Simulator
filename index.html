@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terminal File Organization Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>💻 Terminal File Organization Simulator</h1>
+    </div>
+    
+    <div class="description">
+      <p>Welcome to the simulator! Practice organizing your project files using terminal commands in a neon-themed terminal.</p>
+      <p>Try commands like <code>mkdir</code>, <code>cd</code>, <code>touch</code>, <code>tree</code>, and more.</p>
+    </div>
+
+    <div class="terminal-window">
+      <div class="terminal-bar">
+        <div class="terminal-buttons">
+          <span class="terminal-button close"></span>
+          <span class="terminal-button minimize"></span>
+          <span class="terminal-button maximize"></span>
+        </div>
+        <div class="terminal-title">user@machine: ~/home</div>
+      </div>
+      
+      <div class="terminal" id="terminal">
+        <div class="terminal-content" id="terminalContent">
+          <!-- Sample initial command -->
+          <div class="command-line">
+            <span class="prompt">user@machine:</span>
+            <span class="current-path">~/home</span>
+            <span class="dollar"> $</span>
+            <span class="command-input"> ls</span>
+          </div>
+          <div class="result">index.html  styles.css  script.js</div>
+        </div>
+
+        <!-- Input -->
+        <div class="input-container">
+          <span class="prompt" id="promptUsername">user@machine:</span>
+          <span class="current-path" id="currentPath">~/home</span>
+          <span class="dollar">$</span>
+          <input type="text" id="commandInput" autofocus placeholder="Type your command...">
+        </div>
+      </div>
+    </div>
+
+    <div class="command-help">
+      <h3>Available Commands</h3>
+      <div class="help-grid">
+        <span class="command-name">cd [directory]</span><span>Change directory</span>
+        <span class="command-name">cd ..</span><span>Go up one directory</span>
+        <span class="command-name">mkdir [name]</span><span>Create a new directory</span>
+        <span class="command-name">rm [file/directory]</span><span>Remove a file or directory</span>
+        <span class="command-name">touch [name]</span><span>Create a new file</span>
+        <span class="command-name">tree</span><span>Display directory structure</span>
+        <span class="command-name">mv [src] [dest]</span><span>Move files or directories</span>
+        <span class="command-name">clear</span><span>Clear the terminal screen</span>
+        <span class="command-name">hist</span><span>Show command history</span>
+        <span class="command-name">ls</span><span>List directory contents</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
