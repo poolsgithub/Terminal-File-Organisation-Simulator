@@ -21,4 +21,4 @@ This project provides a simple interface to learn and practice basic terminal co
 
 ## 📦 How to Use
 
-1. Go to link
+1. Go to link  https://shiny-jelly-f817a7.netlify.app/
